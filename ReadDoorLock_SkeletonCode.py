@@ -4,19 +4,28 @@
 import RPi.GPIO as GPIO
 import MFRC522
 import signal
+
+#import the time library for use during this program
 import time
 
 
-GPIO.setmode(GPIO.BCM)
-ServoPin = 23
-GreenLED = 21
-RedLED = 20
+#set up the board to use Broadcom
 
-GPIO.setup(GreenLED, GPIO.OUT)
-GPIO.setup(RedLED, GPIO.OUT)
-GPIO.setup(ServoPin, GPIO.OUT)
-Servo = GPIO.PWM(ServoPin,50)
-Servo.start(5)
+#declare a variable for the servo and set it equal to 23 (pin 23)
+
+#declare a variable for the green LED and set it equal to 21 (pin 21)
+
+#declare a variable for the red LED and set it equal to 20 (pin 20)
+
+#set up the green LED for output
+
+#set up the red LED for output
+
+#set up the servo for output
+
+#set the PWM of the servo and give it a frequency of 50Hz
+
+#use Servo.start(x) and set it to 5% duty cycle
 
 continue_reading = True
 
